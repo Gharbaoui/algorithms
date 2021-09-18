@@ -1,10 +1,9 @@
-NAME = group
+NAME = knapsack
 
 SRC = *.cpp
+GCC = clang++
 
-GCC = clang++ --std=c++17
-
-all: $(NAME)
+all:$(NAME)
 
 $(NAME): $(SRC)
 	$(GCC) $(SRC) -o $(NAME)
@@ -12,4 +11,5 @@ $(NAME): $(SRC)
 clean:
 	rm -rf $(NAME)
 fclean: clean
+
 re: fclean
